@@ -1,0 +1,31 @@
+{
+    "name": "johnabc/laravel-lego",
+    "description": "Laravel Lego",
+    "type": "library",
+    "require": {
+        "php": ">=7.0",
+        "illuminate/support": ">=5.2",
+        "laravel/framework": ">=5.2",
+        "laravelcollective/html": "^6.1",
+        "johnabc/laravel-admin": ">0.0.10"
+    },
+    "authors": [
+        {
+            "name": "JohnABC",
+            "email": "suiyongjie2008@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "autoload": {
+        "psr-4": {
+            "JA\\Wheel": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "JA\\Wheel\\WheelServiceProvider"
+            ]
+        }
+    }
+}
