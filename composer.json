@@ -7,25 +7,34 @@
         "illuminate/support": ">=5.2",
         "laravel/framework": ">=5.2",
         "laravelcollective/html": "^6.1",
-        "johnabc/laravel-admin": ">0.0.10"
+        "johnabc/laravel-admin": ">0.0.10",
+        "symfony/class-loader": "~3.2",
+        "mews/purifier": "^3.2",
+        "mobiledetect/mobiledetectlib": "^2.8",
+        "maatwebsite/excel": ">=2.1"
     },
     "authors": [
         {
-            "name": "JohnABC",
+            "name": "suiyongjie",
             "email": "suiyongjie2008@gmail.com"
         }
     ],
     "minimum-stability": "dev",
     "autoload": {
         "psr-4": {
-            "JA\\Wheel": "src/"
+            "JA\\Lego": "src/Lego"
         }
     },
     "extra": {
         "laravel": {
             "providers": [
-                "JA\\Wheel\\WheelServiceProvider"
-            ]
+                "JA\\Lego\\LegoServiceProvider"
+            ],
+            "aliases": {
+                "JALegoAsset": "JA\\Lego\\Facades\\Asset",
+                "JALegoCache": "JA\\Lego\\Facades\\Cache",
+                "JALegoSession": "JA\\Lego\\Facades\\Session"
+            }
         }
     }
 }
